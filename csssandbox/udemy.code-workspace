@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "csssandbox",
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
