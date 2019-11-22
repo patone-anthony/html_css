@@ -1,0 +1,196 @@
+:root {
+  --primary-color: #2fd442;
+  --secondary-color: white;
+  --width: 1600px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: var(--width);
+}
+
+#landing-button a {
+  color: #0f0;
+  font-size: 3rem;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+}
+
+
+/* Utilities */
+.html,
+.body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: auto;
+  background: white;
+  max-width: var(--width);
+}
+
+/* Navbar */
+#navbar {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.pages {
+  list-style: none;
+  margin-left: 0px;
+  display: inline-block;
+}
+
+#navbar > ul > li { 
+  color: black;
+  display: inline-block;
+  padding: 1.15rem;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.pages li:hover {
+  cursor: pointer;
+  background: var(--primary-color);
+  border-radius: 3px;
+  color: white;
+}
+
+.pages > li:hover a {
+  color: white !important;
+}
+
+#navbar ul li a {
+  color: black; 
+  text-decoration: none;
+}
+
+
+/* Hide nested ul by default */
+#navbar ul li ul {
+  position: absolute;
+  display: none;
+}
+
+#navbar > ul > li > ul > li {
+  color: var(--primary-color);
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+
+/* Nested dropdown show */
+#navbar ul li:hover ul {
+  display: block;
+  width: 300px;
+  margin-top: 1.1rem;
+  margin-left: -1.18rem;
+}
+
+#navbar ul li:hover ul li {
+  display: block;
+  background:#292929; /* dropdown background */
+  opacity: .8;
+}
+
+#navbar ul li:hover ul li a {
+  color: var(--primary-color);
+}
+
+#navbar ul li:hover ul li:hover {
+  background: #4f4f4f;
+  color: white;
+}
+
+#navbar ul li:hover ul li span {
+  float: right;
+  color: #fff;
+  background: var(--primary-color);
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+#navbar ul li:hover ul li:hover span {
+  background: var(--primary-color); 
+}
+
+/* social */
+.social {
+  position: relative;
+  list-style: none;
+  margin-right: 40px;
+  float: right;
+  top: -5px;
+  background: none;
+}
+
+  .social li a {
+   font-size: 2rem;
+  }
+
+  .social li:hover {
+    color: red !important;
+   }
+
+   .social li:nth-child(1):hover a { color: red !important;}
+   .social li:nth-child(2):hover a { color: #0072b1  !important;}
+   .social li:nth-child(3):hover a { color: #4f4f4f !important;}
+
+
+/* image */
+/* .image-container {
+  width: var(--width);
+  height: 500px;
+  object-fit: cover;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.image-container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, .6);
+} */
+
+
+/* Showcase */
+#showcase {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+  background: var(--primary-color);
+}
+
+#showcase h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+@media(max-width: 600px) {
+  #navbar ul li {
+    display: block;
+  }
+
+  #navbar ul li:hover ul {
+    width: 100%;
+    position: relative;
+  }
+}
