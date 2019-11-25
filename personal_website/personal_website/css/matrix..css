@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ /* Landing Page */
+ canvas {
+	width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+
+.landing-container  {
+  width: 100vw;
+  height: 100vh;
+  vertical-align: center;
+}
+
+#landing-button {
+  display: flex;
+  justify-content: center;
+  background: black;
+  height: 70px;
+  width: 140px;
+  margin: auto;
+  z-index: 1;
+  position: relative;
+  top: 50%;
+  border-radius: 15px;
+  opacity: .9;
+  top: 40%;
+}
+
+#landing-button a {
+  color: #0f0;
+  font-size: 3rem;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+}
+

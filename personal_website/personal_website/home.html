@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Anthony Patone | Portfolio</title>
 </head>
 
@@ -16,36 +16,112 @@
   <!-- Navbar -->
   <nav id="navbar">
     <ul class="pages">
-      <li><a href="home.html">Home</a></li>
+      <li class="current"><a href="home.html">Home</a></li>
       <li>Blog <i class="fas fa-angle-down"></i>
         <ul class="pages">
-          <li><a href="#">Python</a> <span>22 Posts</span></li>
-          <li><a href="#">VBA</a> <span>16 Posts</span></li>
-          <li><a href="#">HTML/CSS</a> <span>10 Posts</span></li>
-          <li><a href="#">Javascript</a> <span>13 Posts</span></li>
+          <li><a href="blog/python/main.html">Python</a> <span>22 Posts</span></li>
+          <li><a href="blog/vba/main.html">VBA</a> <span>16 Posts</span></li>
+          <li><a href="blog/html/main.html">HTML/CSS</a> <span>10 Posts</span></li>
+          <li><a href="blog/javascript/main.html">Javascript</a> <span>13 Posts</span></li>
         </ul>
       </li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <ul class="social">
-      <li><a href="https://www.instagram.com/apatone/" class="fab fa-instagram"></a></li>
-      <li><a href="https://www.linkedin.com/in/anthony-patone-227aab48/" class="fab fa-linkedin"></a></li>
-      <li><a href="https://github.com/patone-anthony" class="fab fa-github"></a></li>
+      <div class="rotate">
+        <li>
+          <a href="https://github.com/patone-anthony" class="fab fa-github"></a>
+        </li>
+      </div>
+      <div class="rotate">
+        <li>
+          <a href="https://www.linkedin.com/in/anthony-patone-227aab48/" class="fab fa-linkedin"></a>
+        </li>
+      </div>
+      <div class="rotate">
+        <li>
+          <a href="https://www.instagram.com/apatone/" class="fab fa-instagram"></a>
+        </li>
+      </div>
     </ul>
   </nav>
 
+  <!-- Coding Image -->
+  <section class="main-image">
+    <div class="image-container">
+      <img src="img/coding.jpg" alt="coding">
+      <div class="after"></div>
+    </div>
+  </section>
 
-  <!-- Image -->
-  <!-- <div class="image-container">
-    <img src="img/coding.jpg" alt="coding">
-    <div class="after"></div>
-  </div> -->
+  <!-- Name Section -->
+  <section>
+    <div id="main-1">
+      <div id="main-1-2">
+        <div id="main-1-text">
+          <p class="center">"Hi, I'm Anthony.</p>
+          <br>
+          <p>I'm an aspiring full-stack web developer. I have been coding in Python and VBA for over a
+            year and
+            currently learning HTML, CSS and JavaScript."</p>
+          <br>
+          <p class="center">To learn more about me:</p>
 
-  <header id="showcase">
-    <h1>Your Website Here</h1>
-  </header>
+          <div class="button-wrapper">
+            <button class="button"><a href="about.html">Click Here</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-2">
+      <div id="main-2-1">
+        <i class="fas fa-code"></i>
+        <P class="bold primary under">Developer</P>
+        <p>I focus on writing code that is scalable and reusable. I often hear the code is read much more than it is
+          written. I keep that in mind when writing each line of code!</p>
 
+        <p>I have experience in the following languages:</p>
+        <div class="bullets">
+          <li>Python</li>
+          <li>VBA</li>
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </div>
+      </div>
+      <div id="main-2-1">
+        <i class="fas fa-project-diagram"></i>
+        <P class="bold primary under">Designer</P>
+        <p>This is the first website I designed. I learned a ton about web design and various layouts. I used both
+          Flexbox and Grid for this website and am planning to use Sass for the next website I design. </p>
+      </div>
+      <div id="main-2-1">
+        <i class="fas fa-book-reader"></i>
+        <P class="bold primary under">Student</P>
+        <p>I'm a self-taugh developer and am passionate about learning the latest technologies. I'm contanstly striving
+          to improve as a programmer as well a person.</p>
+        <br>
+        <p>"He who learns but does not think, is lost! He who thinks but does not learn is in great danger."</p>
+        <p class="ital right">
+          -Confucius
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="main-footer" class="py-2">
+    <div class="container footer-container">
+      <p>
+        Copyright &copy; 2019, All Rights Reserved
+      </p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="path-to-javascript-file.js"></script>
 </body>
 
 </html>
